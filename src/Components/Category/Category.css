@@ -1,0 +1,19 @@
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+}
+.category-item {
+  margin: 4px 26px;
+  padding: 2px;
+  cursor: pointer;
+  list-style: none;
+}
+.category-item:hover {
+  color: coral;
+}
+
+.category-item:active {
+  border-bottom: 2px solid coral;
+}
