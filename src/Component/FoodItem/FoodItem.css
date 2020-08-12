@@ -5,6 +5,7 @@
   margin: 15px;
   padding: 10px 15px;
   line-height: 10px;
+  list-style: none;
 }
 .foodItem:hover {
   box-shadow: 0px 0px 8px 2px lightgrey;
@@ -15,4 +16,9 @@
 .foodItem p {
   font-size: 14px;
   color: gray;
+}
+
+.listStyle {
+  text-decoration: none !important;
+  color: black !important;
 }

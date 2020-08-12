@@ -7,15 +7,15 @@ const Category = () => {
         <div>
             <ul className='category-container'>
                 <li className='category-item'>
-                    <Link to="/breakfast">Breakfast</Link>
+                    <Link className="listStyle" to="/breakfast">Breakfast</Link>
                 </li>
 
                 <li className='category-item'>
-                    <Link to="/">Lunch</Link>
+                    <Link className="listStyle" to="/">Lunch</Link>
                 </li>
 
                 <li className='category-item'>
-                    <Link to="/dinner">Dinner</Link>
+                    <Link className="listStyle" to="/dinner">Dinner</Link>
                 </li>
 
             </ul>

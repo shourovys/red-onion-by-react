@@ -1,0 +1,9 @@
+.listStyle {
+  text-decoration: none !important;
+  color: black !important;
+}
+p {
+  color: rgb(146, 146, 146);
+  font-size: 14px;
+  line-height: 22px;
+}

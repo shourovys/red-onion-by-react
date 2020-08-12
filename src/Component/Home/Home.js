@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Category from '../Category/Category';
 import FoodItemContainer from '../FoodItemContainer/FoodItemContainer';
+import FoodItemDtl from '../FoodItemDtl/FoodItemDtl';
+
 
 const Home = () => {
     return (
@@ -14,15 +16,19 @@ const Home = () => {
             <Router>
                 <Category></Category>
                 <Switch>
-                    <Route path='/breakfast'>
+                    <Route exact path='/breakfast'>
                         <FoodItemContainer CategoryName="breakfast" ></FoodItemContainer>
                     </Route>
 
-                    <Route path='/dinner'>
+                    <Route exact path='/dinner'>
                         <FoodItemContainer CategoryName="dinner"></FoodItemContainer>
                     </Route>
-                    <Route path='/'>
+                    <Route exact path='/'>
                         <FoodItemContainer CategoryName="lunch"></FoodItemContainer>
+                    </Route>
+
+                    <Route path="/category/:id">
+                        <FoodItemDtl></FoodItemDtl>
                     </Route>
                 </Switch>
             </Router>

@@ -1,0 +1,54 @@
+.twoSideContainer {
+  display: flex;
+  height: 70vh;
+  margin: 60px 160px;
+}
+
+.leftSide {
+  padding-right: 48px;
+}
+
+.price-quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 2.5rem;
+  margin-right: 18px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  padding: 0px 17px;
+  margin: 10px 10px;
+}
+.quantity span {
+  margin: 8px 2px;
+}
+.quantity div {
+  margin: 8px 18px;
+}
+
+.add-to-cart {
+  display: flex;
+  background-color: rgb(247, 17, 94);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  margin: 20px 0px;
+  padding: 11px 26px;
+  outline: none;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+}
+
+.rightSide img {
+  height: 420px;
+}
