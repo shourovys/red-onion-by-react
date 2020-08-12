@@ -17,11 +17,12 @@ const Home = () => {
                     <Route path='/breakfast'>
                         <FoodItemContainer CategoryName="breakfast" ></FoodItemContainer>
                     </Route>
-                    <Route path='/'>
-                        {/* <FoodItemContainer CategoryName="lunch"></FoodItemContainer> */}
-                    </Route>
+
                     <Route path='/dinner'>
-                        {/* <FoodItemContainer CategoryName="dinner"></FoodItemContainer> */}
+                        <FoodItemContainer CategoryName="dinner"></FoodItemContainer>
+                    </Route>
+                    <Route path='/'>
+                        <FoodItemContainer CategoryName="lunch"></FoodItemContainer>
                     </Route>
                 </Switch>
             </Router>

@@ -161,7 +161,7 @@ const foodData =
         {
             'id': 'D1',
             'name': 'Lemony Salmon Piccard',
-            'category': 'lunch',
+            'category': 'dinner',
             'shotDescription': 'How we dream about our future',
 
             'description': 'How we dream about our future. Lorem ipsum dolor sit amen consenter elite. Debits presenting nescients dolorous repellents laudanum hic option exercitation venial magi omanis dolor voluptuous, total vitae nisi inure. Fugal, et total!',
@@ -172,7 +172,7 @@ const foodData =
         {
             'id': 'D2',
             'name': 'Lemony Salmon Piccard',
-            'category': 'lunch',
+            'category': 'dinner',
             'shotDescription': 'How we dream about our future',
 
             'description': 'How we dream about our future. Lorem ipsum dolor sit amen consenter elite. Debits presenting nescients dolorous repellents laudanum hic option exercitation venial magi omanis dolor voluptuous, total vitae nisi inure. Fugal, et total!',
@@ -183,7 +183,7 @@ const foodData =
         {
             'id': 'D3',
             'name': 'Lemony Salmon Piccard',
-            'category': 'lunch',
+            'category': 'dinner',
             'shotDescription': 'How we dream about our future',
 
             'description': 'How we dream about our future. Lorem ipsum dolor sit amen consenter elite. Debits presenting nescients dolorous repellents laudanum hic option exercitation venial magi omanis dolor voluptuous, total vitae nisi inure. Fugal, et total!',
@@ -194,7 +194,7 @@ const foodData =
         {
             'id': 'D4',
             'name': 'Lemony Salmon Piccard',
-            'category': 'lunch',
+            'category': 'dinner',
             'shotDescription': 'How we dream about our future',
 
             'description': 'How we dream about our future. Lorem ipsum dolor sit amen consenter elite. Debits presenting nescients dolorous repellents laudanum hic option exercitation venial magi omanis dolor voluptuous, total vitae nisi inure. Fugal, et total!',
@@ -205,7 +205,7 @@ const foodData =
         {
             'id': 'D5',
             'name': 'Lemony Salmon Piccard',
-            'category': 'lunch',
+            'category': 'dinner',
             'shotDescription': 'How we dream about our future',
 
             'description': 'How we dream about our future. Lorem ipsum dolor sit amen consenter elite. Debits presenting nescients dolorous repellents laudanum hic option exercitation venial magi omanis dolor voluptuous, total vitae nisi inure. Fugal, et total!',
@@ -216,7 +216,7 @@ const foodData =
         {
             'id': 'D6',
             'name': 'Lemony Salmon Piccard',
-            'category': 'lunch',
+            'category': 'dinner',
             'shotDescription': 'How we dream about our future',
 
             'description': 'How we dream about our future. Lorem ipsum dolor sit amen consenter elite. Debits presenting nescients dolorous repellents laudanum hic option exercitation venial magi omanis dolor voluptuous, total vitae nisi inure. Fugal, et total!',
