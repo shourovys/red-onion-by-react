@@ -1,0 +1,24 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.loginFormContainer img {
+  height: 6rem;
+  width: 16rem;
+  margin: 2.6rem;
+}
+
+.formContainer input {
+  display: block;
+  border: none;
+  background-color: #e4e4e4;
+  padding: 9px 20px;
+  width: 18rem;
+  height: 1.3rem;
+  margin: 8px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
