@@ -13,6 +13,7 @@ import FoodItemDtl from '../FoodItemDtl/FoodItemDtl';
 const Home = () => {
     return (
         <div>
+
             <Router>
                 <Category></Category>
                 <Switch>
@@ -27,11 +28,14 @@ const Home = () => {
                         <FoodItemContainer CategoryName="lunch"></FoodItemContainer>
                     </Route>
 
+
+
                     <Route path="/category/:id">
                         <FoodItemDtl></FoodItemDtl>
                     </Route>
                 </Switch>
             </Router>
+
         </div>
     );
 };

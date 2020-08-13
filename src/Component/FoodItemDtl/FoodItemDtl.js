@@ -5,6 +5,7 @@ import { faCartPlus, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import { useParams } from 'react-router-dom';
 import foodData from '../../fakeData';
 import { useState } from 'react';
+import { addToDatabaseCart } from '../../utilities/databaseManager';
 
 const FoodItemDtl = () => {
     // take the clicked food item id by useing useParams
@@ -13,12 +14,17 @@ const FoodItemDtl = () => {
     const thisFood = foodData.find(food => food.id === id)
     const { img, name, description, price } = thisFood;
 
-
     //in this state we set current quantity value 
     const [count, setCount] = useState(1)
+    const addDataInLocalStore = () => {//this function set food id && quantity in localStorage
+        addToDatabaseCart(id, count)
+        setCount(1)
+    }
 
 
-    // count>0 && 
+
+
+
     return (
         <div className='twoSideContainer'>
             <div className="leftSide">
@@ -30,6 +36,7 @@ const FoodItemDtl = () => {
 
                     <span className='quantity'>
                         <span
+                            // if the count value is <1 then user can Minus 
                             onClick={() => count > 1 && setCount(count - 1)}>
                             <FontAwesomeIcon icon={faMinus} />
                         </span>
@@ -43,10 +50,13 @@ const FoodItemDtl = () => {
                     </span>
                 </div>
 
-                <button className="add-to-cart">
+                <button className="add-to-cart"
+                    onClick={addDataInLocalStore}
+                >
                     <FontAwesomeIcon icon={faCartPlus} />
                     &nbsp;&nbsp;Add
                 </button>
+
             </div>
 
             <div className="rightSide">
