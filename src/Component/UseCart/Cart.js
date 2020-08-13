@@ -12,7 +12,7 @@ const CartContext = createContext()
 export const useCart = () => useContext(CartContext)
 
 const CartContextProvider = (props) => {
-    const [orderedFood, setOrderedFood] = useState([])//set all added food
+    const [orderedFoods, setOrderedFoods] = useState([])//set all added food
     const addedFoodKeyQuantity = getDatabaseCart()//take addedFood key and quantity form local
     const addedFoodId = Object.keys(addedFoodKeyQuantity)//take all key
 
@@ -22,12 +22,12 @@ const CartContextProvider = (props) => {
             food.quantity = addedFoodKeyQuantity[id];
             return food
         })
-        setOrderedFood(addedFood);
+        setOrderedFoods(addedFood);
     }, [])
 
     return (
         <CartContext.Provider
-            value={orderedFood}>
+            value={orderedFoods}>
             {props.children}
         </CartContext.Provider>
 

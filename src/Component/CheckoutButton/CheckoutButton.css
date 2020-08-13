@@ -4,8 +4,15 @@
 }
 
 .checkoutBtn {
-  padding: 10px 18px;
+  padding: 10px 38px;
   margin: 5px;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: lightgray;
+  outline: none;
+}
+#active {
+  background-color: rgb(248, 55, 33);
 }
