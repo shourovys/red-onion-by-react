@@ -5,12 +5,23 @@
   height: 100vh;
   width: 100%;
 }
+.userName {
+  color: rgb(253, 73, 42);
+  font-size: 2.5rem;
+  line-height: 10px;
+}
+.loginFormContainer {
+  text-align: center;
+}
 .loginFormContainer img {
   height: 6rem;
   width: 16rem;
-  margin: 2.6rem;
+  margin: 1rem;
+  text-align: center;
 }
-
+.formContainer {
+  text-align: center;
+}
 .formContainer input {
   display: block;
   border: none;
@@ -21,4 +32,21 @@
   margin: 8px;
   border-radius: 10px;
   font-size: 1.1rem;
+  outline: none;
+}
+#logInBtn {
+  color: white;
+  background-color: #fa5436;
+  width: 20.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin: 8px;
+}
+.change {
+  color: fa5436;
+  cursor: pointer;
 }

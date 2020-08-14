@@ -9,7 +9,8 @@ import './App.css';
 import Home from './Component/Home/Home';
 import CartContextProvider from './Component/UseCart/Cart';
 import Login from './Component/Login/Login';
-import { AuthContextProvider } from './Component/Login/Auth';
+import { AuthContextProvider, PrivateRoute } from './Component/Login/Auth';
+import PlaceOrder from './Component/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
               <Route exact path='/login'>
                 <Login></Login>
               </Route>
-
+              <PrivateRoute path='/placeOrder'>
+                <PlaceOrder></PlaceOrder>
+              </PrivateRoute>
             </Switch>
           </Router>
         </AuthContextProvider>

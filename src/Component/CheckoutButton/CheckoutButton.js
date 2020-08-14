@@ -1,6 +1,7 @@
 import React from 'react';
 import './CheckoutButton.css'
 import { getDatabaseCart } from '../../utilities/databaseManager';
+import { Link } from 'react-router-dom';
 const CheckoutButton = () => {
 
     // const addedFoods = useCart()
@@ -17,9 +18,14 @@ const CheckoutButton = () => {
         <div className="checkoutBtnContainer">
             {
                 addedFoodId.length ?
+                <Link to="/placeOrder">
                     <button id='active' className="checkoutBtn ">
-                        Checkout Your Food
-                    </button> :
+                        
+                            Checkout Your Food
+                           
+                    </button>
+                </Link> :
+
                     <button className="checkoutBtn">
                         Checkout Your Food
                     </button>
