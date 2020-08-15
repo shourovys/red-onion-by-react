@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import logo2 from '../../hot-onion-restaurent-resources/logo2.png'
 import Background from '../../hot-onion-restaurent-resources/Background.png'
 import './Login.css'

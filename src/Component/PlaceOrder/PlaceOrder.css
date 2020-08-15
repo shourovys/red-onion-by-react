@@ -1,0 +1,36 @@
+.placeOrder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6px;
+}
+.placeOrder p {
+  color: black;
+  padding-left: 10px;
+}
+
+.placeOrderFrom {
+  flex-basis: 50%;
+}
+.placeOrderFrom h4 {
+  margin-left: 9px;
+  margin-right: 22px;
+  line-height: 2px;
+}
+
+.placeOrderFrom hr {
+  background-color: black;
+  height: 2px;
+  color: black;
+  border: none;
+  width: 320px;
+  position: relative;
+  right: 152px;
+  margin-bottom: 19px;
+}
+
+.price p {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 6px;
+}

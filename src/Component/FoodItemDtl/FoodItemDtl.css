@@ -34,6 +34,7 @@
 }
 
 .add-to-cart {
+  position: relative;
   display: flex;
   background-color: rgb(247, 17, 94);
   color: white;
@@ -43,6 +44,8 @@
   padding: 11px 26px;
   outline: none;
   cursor: pointer;
+  top: 38px;
+  left: -133px;
 }
 
 .rightSide {

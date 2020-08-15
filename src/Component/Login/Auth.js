@@ -8,9 +8,17 @@ import { Route, Redirect } from "react-router-dom";
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+// creat a context api for pass user state
+const AuthContext = createContext()
+export const AuthContextProvider = (props) => {
+    const auth = Auth();
+    return <AuthContext.Provider value={auth}>{props.children}</AuthContext.Provider>
+}
+export const useAuth = () => useContext(AuthContext)
 
-export function PrivateRoute({ children, ...rest }) {
+export const PrivateRoute = ({ children, ...rest }) => {
     const auth = useAuth()
+    console.log(auth.currentUser);
     return (
         <Route
             {...rest}
@@ -35,7 +43,6 @@ export function PrivateRoute({ children, ...rest }) {
 const Auth = () => {
     const [currentUser, setCurrentUser] = useState(null)
 
-    console.log(currentUser);
     //this function take out user info
     const getUserInfo = user => {
         return {
@@ -114,10 +121,3 @@ const Auth = () => {
 
 
 
-// creat a context api for pass user state
-const AuthContext = createContext()
-export const AuthContextProvider = (props) => {
-    const auth = Auth();
-    return <AuthContext.Provider value={auth}>{props.children}</AuthContext.Provider>
-}
-export const useAuth = () => useContext(AuthContext)

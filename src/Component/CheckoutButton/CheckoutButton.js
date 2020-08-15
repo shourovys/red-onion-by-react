@@ -18,13 +18,11 @@ const CheckoutButton = () => {
         <div className="checkoutBtnContainer">
             {
                 addedFoodId.length ?
-                <Link to="/placeOrder">
-                    <button id='active' className="checkoutBtn ">
-                        
+                    <Link to="/placeOrder">
+                        <button id='active' className="checkoutBtn ">
                             Checkout Your Food
-                           
                     </button>
-                </Link> :
+                    </Link> :
 
                     <button className="checkoutBtn">
                         Checkout Your Food

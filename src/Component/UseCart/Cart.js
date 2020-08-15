@@ -22,7 +22,8 @@ const CartContextProvider = (props) => {
             food.quantity = addedFoodKeyQuantity[id];
             return food
         })
-        setOrderedFoods(addedFood);
+
+        setOrderedFoods(...orderedFoods, addedFood);
     }, [])
 
     return (

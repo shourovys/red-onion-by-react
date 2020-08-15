@@ -1,0 +1,21 @@
+.placeOrderCart {
+  display: flex;
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  justify-content: center;
+  border-radius: 40px;
+  padding: 0px 7px;
+  margin: 3px;
+}
+.placeOrderCart img {
+  height: 100px;
+}
+.placeOrderCart h5 {
+  line-height: 2px;
+}
+.placeOrderCart h3 {
+  color: crimson;
+}
+.name-price {
+  padding: 0px 2px;
+}
