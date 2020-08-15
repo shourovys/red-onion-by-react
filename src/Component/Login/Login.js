@@ -85,7 +85,7 @@ const Login = () => {
                         {exUser && <SineIn></SineIn>}
 
 
-                        <p onClick={changePage} className='change'>{exUser ? 'Creat a Account' : 'Already have an account'}</p>
+                        <p style={{ textAlign: "center" }} onClick={changePage} className='change'>{exUser ? 'Creat a Account' : 'Already have an account'}</p>
                     </div>
                 }
 

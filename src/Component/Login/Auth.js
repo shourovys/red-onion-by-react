@@ -61,6 +61,7 @@ const Auth = () => {
                     .then(res => {
                         const newUser = getUserInfo(result.user)
                         setCurrentUser(newUser)
+                        window.location.pathname = '/'
                     })
                     .catch(err => console.log(err))
 
@@ -79,6 +80,7 @@ const Auth = () => {
         return firebase.auth().signInWithEmailAndPassword(email, password)
             .then(res => {
                 const change = "hello"
+                window.location.pathname = '/'
                 return change
             })
             .catch(function (error) {
@@ -90,6 +92,7 @@ const Auth = () => {
     const sineOut = () => {
         return firebase.auth().signOut().then(function () {
             setCurrentUser(null)
+            window.location.pathname = '/'
         }).catch(function (error) {
             // An error happened.
         });

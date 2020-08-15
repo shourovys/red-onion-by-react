@@ -11,6 +11,7 @@ import FoodItemDtl from '../FoodItemDtl/FoodItemDtl';
 import { PrivateRoute } from '../Login/Auth';
 import PlaceOrder from '../PlaceOrder/PlaceOrder';
 import Login from '../Login/Login';
+import OrderComplete from '../OrderComplete/OrderComplete';
 
 
 const Home = () => {
@@ -35,9 +36,13 @@ const Home = () => {
                         <FoodItemContainer CategoryName="lunch"></FoodItemContainer>
                     </Route>
 
-                    <Route exact path='/placeOrder'>
+                    <PrivateRoute exact path='/placeOrder'>
                         <PlaceOrder></PlaceOrder>
-                    </Route>
+                    </PrivateRoute>
+
+                    <PrivateRoute exact path='/orderComplete'>
+                        <OrderComplete></OrderComplete>
+                    </PrivateRoute>
 
                     <Route path="/category/:id">
                         <FoodItemDtl></FoodItemDtl>

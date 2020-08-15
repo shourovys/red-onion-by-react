@@ -6,7 +6,7 @@ const OrderPlaceBtn = (props) => {
         <div className="checkoutBtnContainer">
             {
                 props.activeBtn ?
-                    <Link to="/placeOrder">
+                    <Link to="/orderComplete">
                         <button id='active' className="checkoutBtn ">
                             place Order
                 </button>
