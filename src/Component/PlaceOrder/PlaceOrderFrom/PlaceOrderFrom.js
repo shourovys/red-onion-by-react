@@ -29,7 +29,7 @@ const PlaceOrderFrom = (props) => {
                 />
 
                 {/* <input onClick={activeMaker} id='logInBtn' type="submit" /> */}
-                <button id='logInBtn' onClick={activeMaker}> LogIn</button>
+                <button id='logInBtn' onClick={activeMaker}> submit</button>
             </form>
         </div>
     );

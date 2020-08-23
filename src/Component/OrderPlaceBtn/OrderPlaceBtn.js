@@ -6,14 +6,15 @@ const OrderPlaceBtn = (props) => {
         <div className="checkoutBtnContainer">
             {
                 props.activeBtn ?
-                    <Link to="/orderComplete">
-                        <button id='active' className="checkoutBtn ">
-                            place Order
+                    // <Link to="/orderComplete">
+                    <button onClick={() => props.setReadyForPayment(true)} id='active' className="checkoutBtn ">
+                        Order Conform
                 </button>
-                    </Link> :
+                    // </Link> 
+                    :
 
                     <button className="checkoutBtn">
-                        place Order
+                        Order Conform
                 </button>
             }
         </div>
